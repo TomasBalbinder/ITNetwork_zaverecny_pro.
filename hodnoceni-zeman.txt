@@ -1,0 +1,15 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - viz níže
+2. Dodržení principů SRP a SoC - Metody print_client a searching_client by mohly hodnoty spíše vracet (return) než vypisovat. U vyhledávání vrátit nalezeného pojištěnce, u vypisování vracet buď celý list a ten vypisovat až později nebo vracet string, do kterého postupně načtu všechny pojištěnce.
+3. Vhodný výběr datových typů - Věk by měl být datového typu int, jedná se totiž o číslo.
+4. Formátování kódu - ok
+5. Duplicitní kód a nekonečné cykly - ok
+6. Validace vstupních dat - ok, ovšem existují lidi, kterých jméno či příjmení má více než tři znaky, validace je v tomto příliš přísná. Proměnná, která tohle kontroluje se jmenuje "empty", což by značilo, že obsahuje informaci jestli je string prázdný, tak tomu ale není.
+                          - Lze nad rámec zadání rozšířit o validaci nezápornosti (if) a číselnosti (try-except) věku, popřípadě i formátu telefonního čísla.
+7. Logičnost a složitost - Při ukončení programu se nastaví proměnná end_program na false. To není moc intuitivní.
+8. Komentáře - ok
+9. Celkové hodnocení - Program splňuje zadání. Zaměřil bych se hlavně na větší využití návratových hodnot (return), popřípadě také na rozšíření a úpravu validace.
+                       Dále je v programu spousta nepřesných a nekonzistentních pojmenování, jak pojmenování neintuitivní (proměnná empty a end_program), tak nekonzistentnost (pojmenování print_client je v přítomném čase prostém, searching_clients zase v průběhovém, metoda shows_clients obsahuje gramatickou chybu apod.)
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
